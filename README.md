@@ -15,7 +15,7 @@ $ composer create-project antindehoda/sort-library project-name
 Usage
 -----
 
-1. Create strategy you need
+1. Create the sorting strategy you need.
 ```php
     $increaseStrategy = new IncreaseSorter();
 ```
@@ -23,14 +23,14 @@ Usage
 ```php
     $sorter = new Sorter($increaseStrategy);
 ```
-3. If you need to change strategy
+3. If you need to change strategy on the fly, you can do it using the method ```setStrategy```.
 ```php
     $decreaseStrategy = new DecreaseSorter();
     $sorter->setStrategy($decreaseStrategy);
 ```
-4. Sort array
+4. Sort the array. The method ```sort``` of the Sorter object returns a sorted array.
 ```php
-    $sorter->sort($array1)
+    $sorter->sort($array)
 ```
 
 License
