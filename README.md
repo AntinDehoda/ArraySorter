@@ -1,5 +1,6 @@
 SortLibrary
 ===============
+Library sorting arrays of numbers and arrays of strings.
 Contains two standard implementations of sorting algorithms: from large to small (```DecreaseSorter```) and from small to large (```IncreaseSorter```).
 
 
