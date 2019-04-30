@@ -1,6 +1,15 @@
 #!/usr/bin/env php
 <?php
+use AntinDehoda\SortLibrary\Sorter;
+use AntinDehoda\SortLibrary\Strategies\IncreaseSorter;
+use AntinDehoda\SortLibrary\Strategies\DecreaseSorter;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+$sorter01 = new Sorter(new IncreaseSorter());
+$sorter02 = new Sorter(new DecreaseSorter());
 
+$array1 = [4, 1, 222, 3];
+$array2 = ["z", "g", "d", "aziz", "aaron"];
+var_dump($sorter01->sort($array1));
+var_dump($sorter02->sort($array2));
