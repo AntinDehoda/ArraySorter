@@ -16,9 +16,9 @@
   "repositories": [
   {
      "type": "vcs",
-     "url": "https://github.com/AntinDehoda/ArraySorter/" 
+     "url": "https://github.com/antindehoda/arraysorter"
   }
-]
+  ],
   "autoload": {
     "psr-4": {
       "AntinDehoda\\SortLibrary\\": "src/"
