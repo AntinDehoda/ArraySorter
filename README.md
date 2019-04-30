@@ -1,24 +1,36 @@
-Default Project
+SortLibrary
 ===============
-
+Contains two standard implementations of sorting algorithms: from large to small (```DecreaseSorter```) and from small to large (```IncreaseSorter```).
 
 
 Installation
 ------------
-
-For creating library you can clone or download it by link https://github.com/AntinDehoda/ArraySorter and execute the command
+For creating library just execute the following command
 
 ```
-$ composer install
+$ composer create-project antindehoda/sort-library project-name
 ```
 
 Usage
 -----
 
-Main changes that you need to do:
-
-1. 
-
+1. Create strategy you need
+```php
+    $increaseStrategy = new IncreaseSorter();
+```
+2. Create Sorter object
+```php
+    $sorter = new Sorter($increaseStrategy);
+```
+3. If you need to change strategy
+```php
+    $decreaseStrategy = new DecreaseSorter();
+    $sorter->setStrategy($decreaseStrategy);
+```
+4. Sort array
+```php
+    $sorter->sort($array1)
+```
 
 License
 -------
