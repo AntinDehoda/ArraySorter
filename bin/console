@@ -4,13 +4,20 @@
 use AntinDehoda\SortLibrary\Sorter;
 use AntinDehoda\SortLibrary\Strategies\IncreaseSorter;
 use AntinDehoda\SortLibrary\Strategies\DecreaseSorter;
+use AntinDehoda\SortLibrary\Strategies\NullObjectSorter;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+$array1 = [4, 1, 222, 3];
+$array2 = ['Zein', 'Greg', 'Daniel', 'Aziz', 'Aaron'];
+
 $increaseStrategy = new IncreaseSorter();
 $decreaseStrategy = new DecreaseSorter();
+$nullObjectStrategy = new NullObjectSorter();
+
 $sorter01 = new Sorter($increaseStrategy);
 $sorter02 = new Sorter($decreaseStrategy);
-$sorter01->setStrategy($decreaseStrategy);
-$array1 = [4, 1, 222, 3];$array2 = ['z', 'g', 'd', 'aziz', 'aaron'];
+
+
 \var_dump($sorter01->sort($array1));
 \var_dump($sorter02->sort($array2));
