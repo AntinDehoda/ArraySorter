@@ -9,7 +9,7 @@ use AntinDehoda\SortLibrary\Strategies\NullObjectSorter;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $array1 = [4, 1, 222, 3];
-$array2 = ['Zein', 'Greg', 'Daniel', 'Aziz', 'Aaron'];
+$array2 = ['Zein', 'Aaron', 'Greg', 'Daniel', 'Aziz'];
 
 $increaseStrategy = new IncreaseSorter();
 $decreaseStrategy = new DecreaseSorter();
@@ -18,6 +18,12 @@ $nullObjectStrategy = new NullObjectSorter();
 $sorter01 = new Sorter($increaseStrategy);
 $sorter02 = new Sorter($decreaseStrategy);
 
+
+\var_dump($sorter01->sort($array1));
+\var_dump($sorter02->sort($array2));
+
+$sorter01->setStrategy($decreaseStrategy);
+$sorter02->setStrategy($nullObjectStrategy);
 
 \var_dump($sorter01->sort($array1));
 \var_dump($sorter02->sort($array2));

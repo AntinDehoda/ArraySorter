@@ -33,7 +33,6 @@ class Sorter
     }
     public function sort(array $array)
     {
-        $this->strategy->sort($array);
-        return $array;
+        return $this->strategy->sort($array);
     }
 }

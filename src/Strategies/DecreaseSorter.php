@@ -16,5 +16,7 @@ class DecreaseSorter implements SortStrategyInterface
     public function sort(array $array)
     {
         \rsort($array);
+
+        return $array;
     }
 }
