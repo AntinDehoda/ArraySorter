@@ -9,7 +9,7 @@ Installation
 For creating library just execute the following command
 
 ```
-$ composer create-project antindehoda/sort-library project-name
+$ composer require antindehoda/sort-library
 ```
 
 Usage
