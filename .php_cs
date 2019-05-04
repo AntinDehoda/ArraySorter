@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<HEADER
-This file is part of the "default-project" package.
+This file is part of the "sort-library" package.
 
 (c) Degoda Anton <dehoda@ukr.net>
 
