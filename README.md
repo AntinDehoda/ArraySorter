@@ -1,7 +1,8 @@
 SortLibrary
 ===============
 Library sorting arrays of numbers and arrays of strings.
-Contains two standard implementations of sorting algorithms: from large to small (```DecreaseSorter```) and from small to large (```IncreaseSorter```).
+Contains two standard implementations of sorting algorithms: from large to small (`DecreaseSorter`) and from small to large (`IncreaseSorter`).
+Also implemented the design pattern "Null Object" (`NullObjectSorter`).
 
 
 Installation
@@ -28,7 +29,7 @@ Usage
     $decreaseStrategy = new DecreaseSorter();
     $sorter->setStrategy($decreaseStrategy);
 ```
-4. Sort the array. The method ```sort``` of the Sorter object returns a sorted array.
+4. Sort the array. The method `sort` of the Sorter object returns a sorted array.
 ```php
     $sorter->sort($array)
 ```
