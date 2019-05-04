@@ -27,7 +27,7 @@ class Sorter
         return $this->strategy;
     }
 
-    public function setStrategy(SortStrategyInterface $strategy): void
+    public function setStrategy(SortStrategyInterface $strategy)
     {
         $this->strategy = $strategy;
     }
