@@ -9,7 +9,7 @@
       "email": "dehoda@ukr.net"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=7.2"
   },
