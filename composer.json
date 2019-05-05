@@ -28,8 +28,8 @@
     }
   },
   "scripts": {
-    "cs-check": "php-cs-fixer fix --allow-risky=yes --diff --ansi --dry-run",
-    "cs-fix": "php-cs-fixer fix --allow-risky=yes --diff --ansi"
+    "cs-check": "php php-cs-fixer fix src/ --allow-risky=yes --diff --ansi --dry-run"
+
   }
 
 }
