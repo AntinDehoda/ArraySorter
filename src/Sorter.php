@@ -21,18 +21,10 @@ class Sorter
     {
         $this->strategy = $strategy;
     }
-
-    public function getStrategy()
-    {
-        return $this->strategy;
-    }
-
-    public function setStrategy(SortStrategyInterface $strategy): void
-    {
+    public function setStrategy(SortStrategyInterface $strategy): void{
         $this->strategy = $strategy;
     }
-    public function sort(array $array): array
-    {
+    public function sort(array $array): array{
         return $this->strategy->sort($array);
     }
 }
