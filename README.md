@@ -7,7 +7,7 @@ Also implemented the design pattern "Null Object" (`NullObjectSorter`).
 
 Installation
 ------------
-For creating library just execute the following command
+To install the library, run this command:
 
 ```
 $ composer require antindehoda/sort-library
