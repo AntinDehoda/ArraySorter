@@ -9,7 +9,7 @@ class NullObjectSorter implements SortStrategyInterface
 
     public function sort(array $array)
     {
-        // Do nothing.
+        // Return original array.
 
         return $array;
     }
