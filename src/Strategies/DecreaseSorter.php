@@ -13,7 +13,7 @@ namespace AntinDehoda\SortLibrary\Strategies;
 
 class DecreaseSorter implements SortStrategyInterface
 {
-    public function sort(array $array)
+    public function sort(array $array): array
     {
         \rsort($array);
 

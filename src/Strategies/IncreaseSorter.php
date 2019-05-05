@@ -5,7 +5,7 @@ namespace AntinDehoda\SortLibrary\Strategies;
 
 class IncreaseSorter implements SortStrategyInterface
 {
-    public function sort(array $array)
+    public function sort(array $array): array
     {
         \sort($array);
 

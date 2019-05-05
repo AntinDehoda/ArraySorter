@@ -13,5 +13,5 @@ namespace AntinDehoda\SortLibrary\Strategies;
 
 interface SortStrategyInterface
 {
-    public function sort(array $array);
+    public function sort(array $array): array;
 }
